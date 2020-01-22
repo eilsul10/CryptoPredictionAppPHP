@@ -10,12 +10,31 @@
 <body>
 
     <div class="header">
-        <h1>Cryptocurrency Predictions</h1>
-        <p>By eilsul10</p>
-      </div>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Bitcoin Price</h1>
+            <p>A simple display of Bitcoin Price using PHP and SASS</p>
+            <p>By Eileen Sul</p>
+        </div>
+    </div>
 
-      <?php
-      echo "Hello World!";
+
+        <h1>Bitcoin Price and Data</h1>
+        <p>By eilsul10</p>
+
+        <img src="https://www.blockchains-expert.com/wp-content/uploads/2019/03/Bitcoin-gold.jpg" alt="Bitcoin">
+
+        <div id="price"></div>
+
+
+
+
+    </div>
+
+      <script>
+
+      let priceID = document.getElementById('price').innerHTML =
+      "<?php
 
       $curl = curl_init();
         // Set some options - we are passing in a useragent too here
@@ -33,9 +52,22 @@
 
         echo $json['data']['amount'];
 
+        ?>";
+
+        setInterval(() => {
+            priceID();
+        }, 2000);
+
+      
 
 
-      ?>
+        // setInterval(function(){alert("<?php echo $json['data']['amount'] ?>")}, 1000);
+
+        </script>
+
+
+
+
 
     
 </body>
