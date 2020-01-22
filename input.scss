@@ -1,0 +1,16 @@
+$font-stack:    Arial, Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+  }
