@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crypto Prediction App in PHP</title>
     <link rel="stylesheet" href="input.css">
-    <link rel="shortcut icon" href="/aspientrelationship/images/00da4ad5acf86d5f802038c527dbf635 (1).ico">
+    <link rel="shortcut icon" href="/favicon-16x16.png">
 
 </head>
 <body>
@@ -28,14 +28,8 @@
           document.getElementById('price').innerText = priceText
           
       }, 1000);
-
-
     
         </script>
-
-
-
-
 
     
 </body>
