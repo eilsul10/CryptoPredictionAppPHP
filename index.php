@@ -38,7 +38,7 @@
         //   document.getElementById('price').innerText = priceJson
 
           // troller way 1
-          const priceResponse = await fetch('/cryptopredictions/price.php')
+          const priceResponse = await fetch('/price.php')
           const priceText = await priceResponse.text()
           document.getElementById('price').innerText = priceText
 
