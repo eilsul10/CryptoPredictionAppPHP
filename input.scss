@@ -1,8 +1,10 @@
 $font-stack:    Arial, Helvetica, sans-serif;
+$font-color: White;
 
 body {
   margin: 0;
   font-family: $font-stack;
+  color: $font-color;
 }
 
 .hero-image {
@@ -23,10 +25,8 @@ background-attachment: fixed;
 }
 
 .hero-text h1 {
-  /* Text styles */
   font-size: 5em;
   
-  /* Margins */
   margin-top: 0;
   margin-bottom: 0.5em;
 }
@@ -34,7 +34,6 @@ background-attachment: fixed;
 .hero-text #price{
   font-size: 5em;
   
-  /* Margins */
   margin-top: 0;
   margin-bottom: 0.5em;
 }

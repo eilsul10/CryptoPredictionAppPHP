@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  color: White; }
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.blockchains-expert.com/wp-content/uploads/2019/03/Bitcoin-gold.jpg");
@@ -16,15 +17,12 @@ body {
   background-attachment: fixed; }
 
 .hero-text h1 {
-  /* Text styles */
   font-size: 5em;
-  /* Margins */
   margin-top: 0;
   margin-bottom: 0.5em; }
 
 .hero-text #price {
   font-size: 5em;
-  /* Margins */
   margin-top: 0;
   margin-bottom: 0.5em; }
 

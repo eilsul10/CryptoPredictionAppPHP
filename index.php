@@ -14,8 +14,8 @@
     <section class="hero-image">
         <div class="hero-text">
             <h1>Bitcoin Price</h1>
-            <p>A simple display of Bitcoin Price using PHP and SASS</p>
-            <p>By Eileen Sul</p>
+            <h2>A simple display of Bitcoin Price using PHP and SASS</h2>
+            <h2>By Eileen Sul</h2>
             <div id="price"></div>
         </div>
     </section>
