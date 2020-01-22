@@ -18,10 +18,6 @@
         </div>
     </div>
 
-
-        <h1>Bitcoin Price and Data</h1>
-        <p>By eilsul10</p>
-
         <img src="https://www.blockchains-expert.com/wp-content/uploads/2019/03/Bitcoin-gold.jpg" alt="Bitcoin">
 
         <div id="price">Price</div>
@@ -32,17 +28,11 @@
       <script>
 
       setInterval(async () => {
-          // loler way 0
-        //   const priceResponse = await fetch('/cryptopredictions/priceJson.php')
-        //   const priceJson = await priceResponse.json()
-        //   document.getElementById('price').innerText = priceJson
-
-          // troller way 1
           const priceResponse = await fetch('/price.php')
           const priceText = await priceResponse.text()
           document.getElementById('price').innerText = priceText
 
-          document.getElementById('updatedTime').innerText = new Date().toISOString()
+        //   document.getElementById('updatedTime').innerText = new Date().toISOString()
           
       }, 2000);
 
