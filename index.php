@@ -6,24 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crypto Prediction App in PHP</title>
     <link rel="stylesheet" href="input.css">
+    <link rel="shortcut icon" href="/aspientrelationship/images/00da4ad5acf86d5f802038c527dbf635 (1).ico">
+
 </head>
 <body>
 
-    <div class="header">
-    <div class="hero-image">
+    <section class="hero-image">
         <div class="hero-text">
             <h1>Bitcoin Price</h1>
             <p>A simple display of Bitcoin Price using PHP and SASS</p>
             <p>By Eileen Sul</p>
         </div>
-    </div>
+    </section>
 
         <img src="https://www.blockchains-expert.com/wp-content/uploads/2019/03/Bitcoin-gold.jpg" alt="Bitcoin">
 
-        <div id="price">Price</div>
-        <div id="updatedTime"></div>
+        <div id="price"></div>
 
-    </div>
 
       <script>
 
@@ -31,10 +30,8 @@
           const priceResponse = await fetch('/price.php')
           const priceText = await priceResponse.text()
           document.getElementById('price').innerText = priceText
-
-        //   document.getElementById('updatedTime').innerText = new Date().toISOString()
           
-      }, 2000);
+      }, 1000);
 
 
     
