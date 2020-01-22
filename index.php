@@ -24,45 +24,30 @@
 
         <img src="https://www.blockchains-expert.com/wp-content/uploads/2019/03/Bitcoin-gold.jpg" alt="Bitcoin">
 
-        <div id="price"></div>
-
-
-
+        <div id="price">Price</div>
+        <div id="updatedTime"></div>
 
     </div>
 
       <script>
 
-      let priceID = document.getElementById('price').innerHTML =
-      "<?php
+      setInterval(async () => {
+          // loler way 0
+        //   const priceResponse = await fetch('/cryptopredictions/priceJson.php')
+        //   const priceJson = await priceResponse.json()
+        //   document.getElementById('price').innerText = priceJson
 
-      $curl = curl_init();
-        // Set some options - we are passing in a useragent too here
-        curl_setopt_array($curl, [
-            CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_URL => 'https://api.coinbase.com/v2/prices/BTC-USD/spot',
-            CURLOPT_USERAGENT => 'Codular Sample cURL Request'
-        ]);
-        // Send the request & save response to $resp
-        $resp = curl_exec($curl);
-        // Close request to clear up some resources
-        curl_close($curl);
+          // troller way 1
+          const priceResponse = await fetch('/cryptopredictions/price.php')
+          const priceText = await priceResponse.text()
+          document.getElementById('price').innerText = priceText
 
-        $json = json_decode($resp, true);
-
-        echo $json['data']['amount'];
-
-        ?>";
-
-        setInterval(() => {
-            priceID();
-        }, 2000);
-
-      
+          document.getElementById('updatedTime').innerText = new Date().toISOString()
+          
+      }, 2000);
 
 
-        // setInterval(function(){alert("<?php echo $json['data']['amount'] ?>")}, 1000);
-
+    
         </script>
 
 
