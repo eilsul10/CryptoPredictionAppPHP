@@ -19,8 +19,6 @@
         </div>
     </section>
 
-        <img src="https://www.blockchains-expert.com/wp-content/uploads/2019/03/Bitcoin-gold.jpg" alt="Bitcoin">
-
         <div id="price"></div>
 
 
