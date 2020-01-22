@@ -16,11 +16,9 @@
             <h1>Bitcoin Price</h1>
             <p>A simple display of Bitcoin Price using PHP and SASS</p>
             <p>By Eileen Sul</p>
+            <div id="price"></div>
         </div>
     </section>
-
-        <div id="price"></div>
-
 
       <script>
 

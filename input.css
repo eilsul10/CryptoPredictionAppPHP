@@ -22,7 +22,10 @@ body {
   margin-top: 0;
   margin-bottom: 0.5em; }
 
-#price {
-  text-align: center; }
+.hero-text #price {
+  font-size: 5em;
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em; }
 
 /*# sourceMappingURL=input.css.map */
