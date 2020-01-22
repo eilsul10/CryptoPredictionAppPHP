@@ -1,8 +1,3 @@
-<head>
-<meta http-equiv="refresh" content="3">
-</head>
-
-<body>
 <?php
 
         header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
@@ -27,4 +22,3 @@
         echo $json['data']['amount'];
 
 ?>
-</body>
